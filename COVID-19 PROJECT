@@ -1,0 +1,9 @@
+# It will display country wise covid cases 
+
+import covid
+from covid import Covid
+fn=Covid()
+cases=fn.get_status_by_country_name("us")
+print(cases)
+for x in cases:
+    print(x,":",cases[x])
